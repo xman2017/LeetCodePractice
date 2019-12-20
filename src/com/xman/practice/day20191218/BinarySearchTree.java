@@ -1,6 +1,7 @@
 package com.xman.practice.day20191218;
 
 
+import com.xman.practice.common.TreeNode;
 
 /**
  * @Author: xman
@@ -8,16 +9,6 @@ package com.xman.practice.day20191218;
  * @Description: 二叉搜索树最近祖先
  */
 public class BinarySearchTree {
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root.val == p.val) return p;
